@@ -1,3 +1,10 @@
+== Web Programmieren 2 - depot
+
+Webshop aus dem Buch "Agile Web Development with Rails"
+-------------------------------------------------------
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
