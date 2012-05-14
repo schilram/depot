@@ -42,8 +42,8 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "should update product" do
     put :update, id: @product, product: @product.attributes
-    #assert_response :success
-		assert_redirected_to product_path(assigns(:product))
+    assert_response :success
+		#assert_redirected_to product_path(assigns(:product))
   end
 
   test "should destroy product" do
