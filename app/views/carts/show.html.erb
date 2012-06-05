@@ -2,9 +2,12 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
+<%= render @cart %>
+<!--
 <div class="cart_title">Your Cart</div>
 <table>
-  <% @cart.line_items.each do |item| %>
+  <%= render(@cart.line_items) %>
+	
     <tr>
       <td><%= item.quantity %>&times;</td>
       <td><%= item.product.title %></td>
@@ -19,6 +22,4 @@
 
 <%= button_to 'Empty cart', @cart, method: :delete,
     confirm: 'Are you sure?' %>
-
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+-->
